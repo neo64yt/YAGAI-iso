@@ -52,7 +52,7 @@ leafpad
 polkit-gnome
 gnome-keyring
 firefox
-pacaur
+pikaur
 obmenu-generator
 pcmanfm-gtk3
 
@@ -85,6 +85,7 @@ hdparm
 ipw2100-fw
 ipw2200-fw
 irssi
+iwd
 lftp
 linux-atm
 lsscsi
@@ -119,6 +120,5 @@ vpnc
 wget
 wireless-regdb
 wireless_tools
-wpa_actiond
 wvdial
 xl2tpd

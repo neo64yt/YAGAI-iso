@@ -4,6 +4,8 @@ set -e -u
 iso_name=zen_installer
 iso_label="ZEN_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
+iso_publisher="Zen Installer"
+iso_application="Zen Arch Linux installer"
 install_dir=arch
 work_dir=work
 out_dir=out
@@ -165,7 +167,7 @@ make_efi() {
         ${script_path}/efiboot/loader/entries/archiso-x86_64-usb.conf > ${work_dir}/iso/loader/entries/archiso-x86_64.conf
 
     # EFI Shell 2.0 for UEFI 2.3+
-    curl -o ${work_dir}/iso/EFI/shellx64_v2.efi https://raw.githubusercontent.com/tianocore/edk2/master/ShellBinPkg/UefiShell/X64/Shell.efi
+    curl -o ${work_dir}/iso/EFI/shellx64_v2.efi https://raw.githubusercontent.com/tianocore/edk2/UDK2018/ShellBinPkg/UefiShell/X64/Shell.efi
     # EFI Shell 1.0 for non UEFI 2.3+
     curl -o ${work_dir}/iso/EFI/shellx64_v1.efi https://raw.githubusercontent.com/tianocore/edk2/UDK2018/EdkShellBinPkg/FullShell/X64/Shell_Full.efi
 }
@@ -218,7 +220,7 @@ make_prepare() {
 
 # Build ISO
 make_iso() {
-    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
+    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
 }
 
 if [[ ${EUID} -ne 0 ]]; then
@@ -231,6 +233,8 @@ while getopts 'N:V:L:P:A:D:w:o:g:vh' arg; do
         N) iso_name="${OPTARG}" ;;
         V) iso_version="${OPTARG}" ;;
         L) iso_label="${OPTARG}" ;;
+        P) iso_publisher="${OPTARG}" ;;
+        A) iso_application="${OPTARG}" ;;
         D) install_dir="${OPTARG}" ;;
         w) work_dir="${OPTARG}" ;;
         o) out_dir="${OPTARG}" ;;
