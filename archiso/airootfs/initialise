@@ -43,7 +43,7 @@ download_installer() {
 
 # function to run installer, and provide choices to user after installer closes
 run_installer() {
-  ./zen_installer/zif
+ sudo ./zen_installer/zif
   ans=$(zenity --list --title="$title" --radiolist --text "What would you like to do now?"  --column "Select" --column "Option" FALSE Restart FALSE Close FALSE "Chroot into new system" FALSE "Open pacman.conf")
 	if [ "$ans" = "Restart" ]
 	then reboot
