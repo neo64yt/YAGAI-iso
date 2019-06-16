@@ -1,4 +1,5 @@
 #!/bin/bash
+
 set -e -u
 
 iso_name=zen_installer
