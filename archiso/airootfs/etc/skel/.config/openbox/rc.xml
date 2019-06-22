@@ -317,10 +317,10 @@
     </keybind>
     <keybind key="A-C-t">
       <action name="Execute">
-        <command>xfce4-terminal</command>
+        <command>lxterminal</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>xfce4-terminal</name>
+          <name>lxterminal</name>
         </startupnotify>
       </action>
     </keybind>
@@ -330,15 +330,6 @@
         <startupnotify>
           <enabled>yes</enabled>
           <name>screenshot</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="C-t">
-      <action name="Execute">
-        <command>xfce4-terminal --drop-down</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>xfce4-terminal --drop-down</name>
         </startupnotify>
       </action>
     </keybind>

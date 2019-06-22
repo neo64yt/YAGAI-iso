@@ -38,7 +38,6 @@ zenity
 openbox-arc-git
 gtk-theme-arc-git
 git
-reflector
 bash-completion
 lxterminal
 lynx
@@ -47,14 +46,14 @@ yad
 ttf-dejavu
 obr-wallpapers
 gparted
-xfce4-terminal
 leafpad
-polkit-gnome
+lxsession-gtk3
 gnome-keyring
-firefox
+netsurf
 pikaur
 obmenu-generator
 pcmanfm-gtk3
+pacman-contrib
 
 #archiso
 arch-install-scripts
