@@ -16,8 +16,9 @@
 #
 #xfce-mcs-manager &
 
-tint2 &
+sh spookybar &
 nm-applet &
 /usr/bin/lxpolkit &
 sh ~/.fehbg &
 /initialise &
+sleep 6;stalonetray -t &
