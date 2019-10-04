@@ -1,11 +1,9 @@
-acpi
-adapta-gtk-theme
+ant-dracula-gtk-theme
 arch-install-scripts
 archiso
 b43-fwcutter
 base
 base-devel
-bash-completion
 broadcom-wl
 btrfs-progs
 cifs-utils
@@ -14,13 +12,10 @@ ddrescue
 dillo
 dmraid
 dosfstools
-dzen2
 ethtool
-exfat-utils
 f2fs-tools
 feh
 git
-gnome-keyring
 gparted
 gptfdisk
 grml-zsh-config
@@ -30,6 +25,7 @@ htop
 l3afpad
 libsecret
 lxsession-gtk3
+lxpanel-gtk3
 lxterminal
 lynx
 lzop
@@ -45,7 +41,6 @@ obmenu-generator
 openbox
 openbox-arc-git
 openssh
-openssl
 openvpn
 pacman-contrib
 partclone
@@ -54,12 +49,10 @@ pcmanfm-gtk3
 polkit
 refind-efi
 squashfs-tools
-stalonetray
 sudo
 tcl
 tcpdump
 testdisk
-ttf-bitstream-vera
 ttf-dejavu
 unrar
 unzip
@@ -67,11 +60,8 @@ usb_modeswitch
 vim-minimal
 virtualbox-guest-modules-arch
 virtualbox-guest-utils
-wget
-wget
 wireless-regdb
 wireless_tools
-wmctrl
 wpa_supplicant
 xorg-drivers
 xorg-server
