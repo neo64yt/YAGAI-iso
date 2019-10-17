@@ -19,5 +19,5 @@
 lxpanel &
 nm-applet &
 /usr/bin/lxpolkit &
-sh ~/.fehbg &
+hsetroot -fill /Zen_decking.png &
 /initialise &
