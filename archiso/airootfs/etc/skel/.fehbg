@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-scale '/Zen_decking.png' 
+feh --bg-scale Zen_decking.png 

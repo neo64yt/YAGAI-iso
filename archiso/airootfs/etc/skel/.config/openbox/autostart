@@ -16,8 +16,9 @@
 #
 #xfce-mcs-manager &
 
-lxpanel &
+compton -b &
 nm-applet &
+~/.fehbg &
+lxpanel &
 /usr/bin/lxpolkit &
-hsetroot -fill /Zen_decking.png &
 /initialise &
