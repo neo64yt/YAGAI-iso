@@ -199,7 +199,7 @@ hc unlock
 hc_run_chain
 
 #autostart
-sh spookybar/spookybar &
+sh spookybar &
 /usr/bin/lxpolkit &
 compton -b &
 ~/.fehbg &
