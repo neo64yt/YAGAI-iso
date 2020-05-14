@@ -18,7 +18,7 @@
 
 compton -b &
 nm-applet &
-~/.fehbg &
+hsetroot -cover /Zen_decking.png &
 lxpanel &
 /usr/bin/lxpolkit &
 /initialise &
