@@ -16,9 +16,9 @@
 #
 #xfce-mcs-manager &
 
-compton -b &
+picom &
 nm-applet &
-hsetroot -cover /Zen_decking.png &
+hsetroot -full /usr/share/backgrounds/yagai.png &
 lxpanel &
 /usr/bin/lxpolkit &
-/initialise &
+initialize &

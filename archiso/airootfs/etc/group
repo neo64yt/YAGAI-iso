@@ -1,0 +1,5 @@
+root:x:0:root
+adm:x:4:yagai
+wheel:x:10:yagai
+uucp:x:14:yagai
+yagai:x:1000:
